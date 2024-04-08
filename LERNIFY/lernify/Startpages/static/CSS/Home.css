@@ -1,5 +1,29 @@
 .PincoPalloBlu {
     position : absolute;
     top : 0;
-    fill : blue;
+    fill : rgb(0, 100, 200);
+}
+
+#RegAcc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position : absolute;
+    width : 200px;
+    left : calc(50% - 100px);
+    top : 60%;
+}
+.RA {
+    margin : 20px;
+    width: 250px;
+    height : 60px;
+    border-radius: 100VW 100vw 100vw 100vw;
+    border : none;
+}
+
+#R {
+    background-color: rgb(0, 222, 255);
+}
+#A{
+    background-color: rgb(230, 230, 230);
 }
