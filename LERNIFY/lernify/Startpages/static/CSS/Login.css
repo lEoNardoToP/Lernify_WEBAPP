@@ -52,6 +52,8 @@
 }
 body {
     background-image: url("../media/Login Backgorund.png");
+    background-position-y: -100px;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 a {
