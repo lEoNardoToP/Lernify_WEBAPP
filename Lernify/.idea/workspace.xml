@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a9819e8-16c0-4e28-8c7e-238564d30451" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lernify/Startpages/templates/CSS/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/lernify/Startpages/static/CSS/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lernify/Startpages/templates/HTML/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lernify/Startpages/templates/Home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lernify/Startpages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lernify/Startpages/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lernify/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lernify/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lernify/templates/CSS/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/lernify/Startpages/templates/CSS/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lernify/templates/HTML/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lernify/Startpages/templates/HTML/Home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,10 +63,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lernify/Startpages" />
+      <recent name="$PROJECT_DIR$/lernify/static/CSS" />
+      <recent name="$PROJECT_DIR$/lernify/static" />
+      <recent name="$PROJECT_DIR$/lernify/Startpages/templates" />
       <recent name="$PROJECT_DIR$/lernify" />
-      <recent name="$PROJECT_DIR$/lernify/templates/HTML" />
-      <recent name="$PROJECT_DIR$/lernify/lernify" />
-      <recent name="$PROJECT_DIR$/lernify/lernify/WelcomePage" />
     </key>
   </component>
   <component name="RunManager">
@@ -114,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712579934320</updated>
       <workItem from="1712579936388" duration="4516000" />
-      <workItem from="1712584613196" duration="851000" />
+      <workItem from="1712584613196" duration="1899000" />
     </task>
     <servers />
   </component>
