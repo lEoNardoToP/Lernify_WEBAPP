@@ -20,5 +20,7 @@ from lernify.Startpages import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.HomePage, name="home")
+    path("", views.HomePage, name="home"),
+    path("Login", views.LoginPage, name="login"),
+
 ]

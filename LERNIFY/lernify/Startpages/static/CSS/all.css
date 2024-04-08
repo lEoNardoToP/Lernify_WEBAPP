@@ -1,0 +1,11 @@
+* {
+    margin : 0;
+}
+#ArtInTheCloud {
+    position: absolute;
+    height : 100vh;
+    width : 100vw;
+}
+.PincoPalloBlu {
+    fill : rgb(56, 195, 237);
+}
