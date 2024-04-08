@@ -1,0 +1,61 @@
+#FORM {
+    position: absolute;
+    top : 60%;
+    width: 500px;
+    left: calc(50% - 250px);
+    height: 500px;
+}
+#myLoginForm {
+    display: flex;
+    flex-direction: column;
+}
+#Email {
+
+    padding : 18px;
+    font-size: 20px;
+    position: absolute;
+    width : 80%;
+    height: 80px;
+    border-radius: 100vw 100vw 100vw 100vw;
+}
+
+#Password {
+    padding : 18px;
+    font-size: 20px;
+    position: absolute;
+    top : 30%;
+    height: 80px;
+    width : 80%;
+    border-radius: 100vw 100vw 100vw 100vw;
+}
+
+#Submit{
+    background-color: rgb(47, 79, 204);
+    left : 5%;
+    padding : 18px;
+    font-size: 20px;
+    position: absolute;
+    top : 60%;
+    height: 80px;
+    width : 80%;
+    border-radius: 100vw 100vw 100vw 100vw;
+}
+
+#NonTiScordarDiMe {
+    position: absolute;
+    top : 90%;
+}
+#PasswordDimenticata {
+    position: absolute;
+    right : 0;
+    top : 90%;
+}
+body {
+    background-image: url("../media/Login Backgorund.png");
+    background-size: cover;
+}
+a {
+    color : cyan;
+    text-decoration: none;
+    font-weight: bold;
+}
