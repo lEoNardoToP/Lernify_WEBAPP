@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from lernify.Startpages import views
+from Startpages import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.HomePage, name="home"),
     path("Login", views.LoginPage, name="login"),
-
+    path("Registration", views.CreateAccount, name="registration"),
+    path("ResetPassword", views.ForgotPassword, name="reset_password"),
 ]

@@ -80,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lernify.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
