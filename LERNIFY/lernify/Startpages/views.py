@@ -7,3 +7,9 @@ def HomePage(request):
 
 def LoginPage(request):
     return render(request, "LoginPage.html")
+
+def CreateAccount(request):
+    return render(request, "CreateAccount.html")
+
+def ForgotPassword(request):
+    return render(request, "ForgotPassword.html")
