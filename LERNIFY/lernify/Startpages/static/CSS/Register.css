@@ -147,3 +147,12 @@ label[for="confirmPassword"] {
     top : 85%;
     right : 0;
 }
+#error {
+    position: absolute;
+    left : 15%;
+    top : 40%;
+    color : red;
+    font-size : 30px;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
