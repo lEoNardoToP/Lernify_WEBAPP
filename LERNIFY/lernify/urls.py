@@ -23,5 +23,6 @@ urlpatterns = [
     path("", views.HomePage, name="home"),
     path("Login", views.LoginPage, name="login"),
     path("Registration", views.CreateAccount, name="registration"),
-    path("ResetPassword", views.ForgotPassword, name="reset_password"),
+    path("ForgotPassword", views.ForgotPassword, name="forgot_password"),
+    path("ResetPassword", views.ResetPassword, name="reset_password"),
 ]

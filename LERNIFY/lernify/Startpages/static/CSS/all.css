@@ -9,3 +9,6 @@
 .PincoPalloBlu {
     fill : rgb(56, 195, 237);
 }
+ button:active {
+     transform: scale(95%);
+ }
