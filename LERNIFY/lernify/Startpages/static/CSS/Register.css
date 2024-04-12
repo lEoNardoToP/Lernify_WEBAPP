@@ -1,15 +1,17 @@
 #FORM {
     position: absolute;
-    top : 20%;
+    top : 10%;
     width: 500px;
     left: calc(50% - 250px);
-    height: 500px;
+    height: 600px;
 }
 #myLoginForm {
     display: flex;
     flex-direction: column;
 }
 #nome{
+    position : absolute;
+    left : 0;
     padding : 18px;
     font-size: 20px;
     width : 100%;
@@ -17,6 +19,9 @@
     border-radius: 100vw 100vw 100vw 100vw;
 }
 #email {
+    position : absolute;
+    left : 0;
+    top : 25%;
     padding : 18px;
     font-size: 20px;
     width : 100%;
@@ -29,6 +34,9 @@ label {
     height: fit-content;
 }
 #password {
+    position : absolute;
+    left : 0;
+    top : 50%;
     padding : 18px;
     font-size: 20px;
     height: 80px;
@@ -36,6 +44,9 @@ label {
     border-radius: 100vw 100vw 100vw 100vw;
 }
 #confirmPassword {
+    position : absolute;
+    left : 0;
+    top : 75%;
     padding : 18px;
     font-size: 20px;
     height: 80px;
@@ -87,7 +98,8 @@ h1 {
     margin: 10px;
 }
 #Submit {
-    position: relative;
+    position: absolute;
+    top : 100%;
     width : 60%;
     left : 20%
 }
@@ -100,4 +112,38 @@ h1 {
     position: absolute;
     top: 90%;
     left : calc(50% - 90px)
+}
+label[for="nome"] {
+    position: absolute;
+    font-size: 20px;
+    top : -2%;
+    left : 10%
+}
+label[for="email"] {
+    position: absolute;
+    font-size: 20px;
+    top :23%;
+    left : 10%
+}
+label[for="password"] {
+    position: absolute;
+    font-size: 20px;
+    top : 48%;
+    left : 10%
+}
+label[for="confirmPassword"] {
+    position: absolute;
+    font-size: 20px;
+    top : 73%;
+    left : 10%
+}
+#labelPassword {
+    position : absolute;
+    top : 60%;
+    right : 0;
+}
+#labelConfirmPassword {
+    position : absolute;
+    top : 85%;
+    right : 0;
 }

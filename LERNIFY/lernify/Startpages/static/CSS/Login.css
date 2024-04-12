@@ -9,19 +9,22 @@
     display: flex;
     flex-direction: column;
 }
-#Email {
-
+#email {
     padding : 18px;
     font-size: 20px;
     position: absolute;
-    width : 80%;
+    width : 100%;
+    left : 0;
     height: 80px;
     border-radius: 100vw 100vw 100vw 100vw;
 }
 
-#Password {
+#password {
     padding : 18px;
     font-size: 20px;
+    position: absolute;
+    top : 30%;
+    left: 0;
     height: 80px;
     width : 100%;
     border-radius: 100vw 100vw 100vw 100vw;
@@ -29,7 +32,7 @@
 
 #Submit{
     background-color: rgb(47, 79, 204);
-    left : 5%;
+    left : 15%;
     padding : 18px;
     font-size: 20px;
     position: absolute;
@@ -39,9 +42,14 @@
     border-radius: 100vw 100vw 100vw 100vw;
 }
 
-#NonTiScordarDiMe {
+#Ricordami {
     position: absolute;
     top : 90%;
+}
+label[for="Ricordami"]{
+    position: absolute;
+    top : 89%;
+    left : -15%;
 }
 #PasswordDimenticata {
     position: absolute;
@@ -76,14 +84,26 @@ a {
     color: black;
 
 }
+#NoAccount {
+    width: 100px;
+    left: calc(50% - 80px);
+    position: absolute;
+    top: 85%;
+}
+label[for="email"] {
+    position: absolute;
+    font-size: 20px;
+    top :-5%;
+    left : 10%
+}
+label[for="password"] {
+    position: absolute;
+    font-size: 20px;
+    top : 25%;
+    left : 10%
+}
 #passwordLabel {
     position: absolute;
-    top : 30%;
-    width : 80%;
-}
-#register {
-    position: absolute;
-    top: 90%;
-    width : 100px;
-    left: calc(50% - 80px);
+    top : 40%;
+    right : 0;
 }
