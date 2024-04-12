@@ -18,7 +18,7 @@ class LoginForm(forms.Form) :
         attrs={ 'id': 'username', 'placeholder': 'Username'}))
     password = forms.CharField(label="Password", widget=forms.PasswordInput(
         attrs={ 'id': 'password', 'placeholder': 'password'}))
-    Ricordami = forms.BooleanField(label="Ricordami", required="false", widget=forms.CheckboxInput(attrs={'id':'Ricordami'}))
+    ricordami = forms.BooleanField(label="Ricordami", required=False, widget=forms.CheckboxInput(attrs={'id':'Ricordami'}))
 
 class ResetPasswordForm(forms.Form) :
     password = forms.CharField(label="Nuova Password", widget=forms.PasswordInput(
