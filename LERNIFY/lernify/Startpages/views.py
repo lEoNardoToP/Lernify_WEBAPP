@@ -17,9 +17,12 @@ def LoginPage(request):
         if form.is_valid():
             username = request.POST['username']
             password = request.POST['password']
+            remember_me = request.POST['ricordami']
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
+                if not remember_me:
+                    request.session.set_expiry(0)
                 return redirect("login")
             else :
                 context["error"] = "Invalid Username or Password"
