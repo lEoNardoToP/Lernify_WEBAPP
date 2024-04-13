@@ -15,14 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from Startpages import views
+from django.urls import path, reverse_lazy, include
+import Startpages.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.HomePage, name="home"),
-    path("Login", views.LoginPage, name="login"),
-    path("Registration", views.CreateAccount, name="registration"),
-    path("ForgotPassword", views.ForgotPassword, name="forgot_password"),
-    path("ResetPassword", views.ResetPassword, name="reset_password"),
+    path("", include((Startpages.urls, "Statpages"), namespace="Startpages")),
 ]
