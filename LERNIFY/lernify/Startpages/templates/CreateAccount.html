@@ -15,7 +15,7 @@
 <body>
 <h1 id="CreaAccount">Crea Account</h1>
 <div id="FORM">
-    <form action="{% url 'registration' %}" method="POST" id="myLoginForm">
+    <form action="{% url 'Startpages:registration' %}" method="POST" id="myLoginForm">
         {% csrf_token %}
         {{ form }}
         <div id="labelPassword">

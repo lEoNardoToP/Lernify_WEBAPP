@@ -17,7 +17,10 @@ def LoginPage(request):
         if form.is_valid():
             username = request.POST['username']
             password = request.POST['password']
-            remember_me = request.POST['ricordami']
+            if "ricordami" in request.POST :
+                remember_me = request.POST['ricordami']
+            else :
+                remember_me = False
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
@@ -50,24 +53,3 @@ def CreateAccount(request):
         form = CreateAccountForm()
     context["form"] = form
     return render(request, "CreateAccount.html", context)
-
-def ForgotPassword(request):
-    if request.method == "POST":
-        form = ForgotPasswordForm(request.POST)
-        if form.is_valid():
-            pass
-    else :
-        form = ForgotPasswordForm()
-    context = {"form": form}
-    return render(request, "ForgotPassword.html", context)
-
-#@login_required(login_url="LoginPage")
-def ResetPassword(request):
-    if request.method == "POST":
-        form = ResetPasswordForm(request.POST)
-        if form.is_valid():
-            pass
-    else :
-        form = ResetPasswordForm()
-    context = {"form": form}
-    return render(request, "ResetPassword.html", context)
