@@ -30,6 +30,19 @@ Lernify can become a small learning dashboard where users can:
 
 ---
 
+## Run locally
+
+```bash
+cd LERNIFY/lernify
+python -m venv .venv && . .venv/bin/activate
+pip install django
+python manage.py migrate
+python manage.py runserver
+```
+
+Set `DJANGO_SECRET_KEY` (and `DJANGO_DEBUG=0` outside development). Password-reset email needs
+`EMAIL_HOST_USER` and `EMAIL_HOST_PASSWORD` in the environment; no credential lives in the code.
+
 ## Current status
 
 **Status:** prototype / portfolio cleanup in progress.
