@@ -35,7 +35,8 @@ Lernify can become a small learning dashboard where users can:
 ```bash
 cd LERNIFY/lernify
 python -m venv .venv && . .venv/bin/activate
-pip install django
+pip install -r requirements.txt
+python manage.py test        # 9 tests: pages, signup, login, password reset, SMTP TLS
 python manage.py migrate
 python manage.py runserver
 ```

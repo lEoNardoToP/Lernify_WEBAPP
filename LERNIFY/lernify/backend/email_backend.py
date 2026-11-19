@@ -12,7 +12,6 @@ class EmailBackend(SMTPBackend):
             ssl_context.load_cert_chain(self.ssl_certfile, self.ssl_keyfile)
             return ssl_context
         else:
-            ssl_context = ssl.create_default_context()
-            ssl_context.check_hostname = False
-            ssl_context.verify_mode = ssl.CERT_NONE
-            return ssl_context
+            # Verify the server certificate and hostname: disabling both let anyone
+            # on the network path read the SMTP login.
+            return ssl.create_default_context()
