@@ -26,7 +26,7 @@ def LoginPage(request):
                 login(request, user)
                 if not remember_me:
                     request.session.set_expiry(0)
-                return redirect("login")
+                return redirect("Startpages:login")
             else :
                 context["error"] = "Invalid Username or Password"
     else :
@@ -39,16 +39,20 @@ def CreateAccount(request):
     if request.method == "POST":
         form = CreateAccountForm(request.POST)
         if form.is_valid():
-            user = authenticate(username=request.POST['username'], password=request.POST['password'])
-            existsEmail = User.objects.filter(email=request.POST['email']).exists()
-            if user is None and not existsEmail:
-                user = User.objects.create_user(username=request.POST['username'], password=request.POST['password'])
-                login(request, user)
-                return redirect("login")
-            elif existsEmail :
-                context["error"] = "Email already exists"
-            elif user is not None:
+            username = form.cleaned_data["username"]
+            email = form.cleaned_data["email"]
+            password = form.cleaned_data["password"]
+            if password != form.cleaned_data["confirmPassword"]:
+                context["error"] = "Passwords do not match"
+            elif User.objects.filter(username=username).exists():
                 context["error"] = "User already exists"
+            elif User.objects.filter(email__iexact=email).exists():
+                context["error"] = "Email already exists"
+            else:
+                # The email must be stored: password reset looks users up by it.
+                user = User.objects.create_user(username=username, email=email, password=password)
+                login(request, user)
+                return redirect("Startpages:login")
     else :
         form = CreateAccountForm()
     context["form"] = form
